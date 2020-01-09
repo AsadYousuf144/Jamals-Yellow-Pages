@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ACE310AB-7B7C-4E83-B54D-5FDB9047EF11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Jamals_Yellow_Pages</RootNamespace>
+    <AssemblyName>Jamals Yellow Pages</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar">
+      <HintPath>..\packages\CircularProgressBar.2.5.6403.13419\lib\net35-client\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation">
+      <HintPath>..\packages\WinFormAnimation.1.5.6298.3372\lib\net35-client\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bus_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bus_Class.Designer.cs">
+      <DependentUpon>Bus_Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Companies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Companies.Designer.cs">
+      <DependentUpon>Companies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact.Designer.cs">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CPEC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CPEC.Designer.cs">
+      <DependentUpon>CPEC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dynamic.cs" />
+    <Compile Include="Font.cs" />
+    <Compile Include="Foreign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Foreign.Designer.cs">
+      <DependentUpon>Foreign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridViewSortEventArgs.cs" />
+    <Compile Include="GridViewSortEventArgs_2.cs" />
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakeColumnsSortable_DataBindingComplete.cs" />
+    <Compile Include="metroGrid1.cs" />
+    <Compile Include="MyUserControl.cs" />
+    <Compile Include="OracleCommand.cs" />
+    <Compile Include="Pager.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Private.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Representatives.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Representatives.Designer.cs">
+      <DependentUpon>Representatives.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Representatives2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Representatives2.Designer.cs">
+      <DependentUpon>Representatives2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_C.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_C.Designer.cs">
+      <DependentUpon>Search_C.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StorageFile.cs" />
+    <Compile Include="Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test2.Designer.cs">
+      <DependentUpon>Test2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trade.Designer.cs">
+      <DependentUpon>Trade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trade2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trade2.Designer.cs">
+      <DependentUpon>Trade2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bus_Class.resx">
+      <DependentUpon>Bus_Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Companies.resx">
+      <DependentUpon>Companies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact.resx">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CPEC.resx">
+      <DependentUpon>CPEC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Foreign.resx">
+      <DependentUpon>Foreign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Representatives.resx">
+      <DependentUpon>Representatives.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Representatives2.resx">
+      <DependentUpon>Representatives2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_C.resx">
+      <DependentUpon>Search_C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test2.resx">
+      <DependentUpon>Test2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trade.resx">
+      <DependentUpon>Trade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trade2.resx">
+      <DependentUpon>Trade2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jamals.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jamals2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JYP Software.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JYP Software1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JYP Software132.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JYP Software13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Close Window-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Close Window-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Minimize Window-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Maximize Window-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Close Window-30 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\465.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1234.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JYP Software131.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\veJfME.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ground jyp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ground jyp 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JamalsLogo-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ground jyp 31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ground 4 jyp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dgn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow-pages-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow-pages-logo-200x200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Splash-02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Splash-01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loader-light.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy %282%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fnfnm.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home 1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Menu-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Menu-201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Menu-202.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Menu-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Menu-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Menu-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Menu-251.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Menu-23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Menu-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Home-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Home-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\009.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\007.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\008.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0051.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005 [1].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005 [2].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JamalsLogo-011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Back To-30 %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Back To-30 %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Back To-33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Back-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Back To Filled-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Back To-30 %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Back-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Line123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Line124.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JYP-Gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JYP.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag-wave-final.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JYP1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JYP2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Error-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow-02-01-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CPEC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JYP background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JYP ground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Print-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Print-20 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Print-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rbsearch_e0.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading123-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp-1_00000.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp-1_00000 [1].gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Splash-001-02.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
